@@ -1,0 +1,30 @@
+{
+  "name": "image-bucket",
+  "version": "0.1.0",
+  "private": true,
+  "Authors": [
+    "Roman Kovtun",
+    "Kevin Danikowski"
+  ],
+  "dependencies": {
+    "apollo-upload-server": "^4.0.2",
+    "aws-sdk": "^2.202.0",
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.12.3",
+    "imagesize": "^1.0.0",
+    "mongoose": "^5.0.1",
+    "s3-upload-stream": "^1.0.7",
+    "sharp": "^0.20.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "debug": "node server.js --debug",
+    "test": "react-scripts test --env=jsdom",
+    "build": "env-cmd ../.env node start server.js"
+  }
+}
